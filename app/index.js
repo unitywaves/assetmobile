@@ -18,20 +18,13 @@ function LoadingScreen(props) {
 };
 
 //2 - MAIN SCREEN
-function Main (){
-    return (
-        <View style={{flex: 1, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center'}}>
-            <Text>You Have Successfully Set Up Your App</Text>
-        </View>
-    );
-}
-const AppStack = createStackNavigator({ Main });
+import HomeStack from "./modules/home"
 
 //3 - ROUTES STACK
 const RoutesStack = createSwitchNavigator(
     {
         Loading: LoadingScreen,
-        App: AppStack
+        App: HomeStack
     },
     {initialRouteName: 'Loading'}
 );
