@@ -7,14 +7,16 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 //2 - MAIN SCREEN
-import HomeStack from "./modules/home"
+//import HomeStack from "./modules/home"
+import MoviesStack from "./modules/movies"
 
 //3 - ROUTES STACK
 const RoutesStack = createSwitchNavigator(
     {
         Loading: AuthLoading,
         Auth: AuthStack,
-        App: HomeStack
+        App: MoviesStack
+        //App: HomeStack
     },
     {initialRouteName: 'Loading'}
 );
