@@ -1,7 +1,12 @@
-Run instructions for iOS: • cd /Users/will/react/assetmobile && react-native run-ios - or - • Open ios/assetmobile.xcodeproj in Xcode • Hit the Run button
+  Run instructions for iOS:
+    • cd "/Users/krispy/projects/assetmobile/AssetDivide" && npx react-native run-ios
+    - or -
+    • Open AssetDivide/ios/AssetDivide.xcworkspace in Xcode or run "xed -b ios"
+    • Hit the Run button
 
-Run instructions for Android: • Have an Android emulator running (quickest way to get started), or a device connected. • cd /Users/will/react/assetmobile && react-native run-android
+  Run instructions for Android:
+    • Have an Android emulator running (quickest way to get started), or a device connected.
+    • cd "/Users/krispy/projects/assetmobile/AssetDivide" && npx react-native run-android
 
-
-
-https://medium.com/mesan-digital/how-to-build-a-react-native-app-using-react-hooks-and-redux-movies-module-30ac0260fdd7
+  Run instructions for Windows and macOS:
+    • See https://aka.ms/ReactNative for the latest up-to-date instructions.

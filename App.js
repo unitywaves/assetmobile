@@ -1,4 +1,7 @@
-// * Description: App Entry Point
+/**
+ * @format
+ * @flow strict-local
+ */
 
 import React, { Component } from 'react';
 
@@ -8,11 +11,11 @@ import Router from './app/index'
 import store from './app/redux/store';
 
 export default class App extends Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <Router />
-            </Provider>
-        );
-    }
+  render() {
+    return (
+      <Provider store={store}>
+        <Router />
+      </Provider>
+    );
+  }
 }
