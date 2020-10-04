@@ -3,13 +3,7 @@
  * @flow strict-local
  */
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome5';
-
-FontAwesomeIcon.getStyledIconSet('brand').loadFont();
-FontAwesomeIcon.getStyledIconSet('light').loadFont();
-FontAwesomeIcon.getStyledIconSet('regular').loadFont();
-FontAwesomeIcon.getStyledIconSet('solid').loadFont();
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 Icon.loadFont();
 
 import React, { Component } from 'react';
