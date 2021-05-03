@@ -11,9 +11,9 @@ export function register(data) {
 };
 
 export function login(data) {
-  return new Promise((resolve, reject) => {
-    axios.post(c.LOGIN, data)
-            .then((resp) => resolve(resp))
+    return new Promise((resolve, reject) => {
+        axios.post(c.LOGIN, data)
+            .then((resp) => resolve(resp.data))
             .catch(error => reject(handleError(error)));
     });
 };

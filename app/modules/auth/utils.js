@@ -26,19 +26,17 @@ export function getToken() {
 };
 
 // Save token and user data to Asyncstorage
-export async function setToken(token, resData, dispatch) {
-  try {
-    const userData = {
-      "email": resData.data.email,
-      "permission_title": resData.data.permission_title
-    };
-    let data = [[c.TOKEN_KEY, JSON.stringify(token)], [c.USER_KEY, JSON.stringify(userData)]]
-    await AsyncStorage.multiSet(data);
-    dispatch({type: c.LOGGED_IN, data: {userData}});
-    return true;
-  } catch (err) {
-    throw err;
-  }
+export async function setToken(token, user = {}, dispatch) {
+    try {
+        let data = [[c.TOKEN_KEY, token], [c.USER_KEY, JSON.stringify(user)]]
+        await AsyncStorage.multiSet(data);
+
+        dispatch({type: c.LOGGED_IN, data: {user}});
+
+        return true;
+    } catch (err) {
+        throw err;
+    }
 }
 
 export function removeToken(dispatch) {
