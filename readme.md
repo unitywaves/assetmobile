@@ -15,6 +15,6 @@
 
 DEMO api login
 
-eve.holt@reqres.in
+username: eve.holt@reqres.in
 
-cityslicka
+password: cityslicka
